@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+function obterFrase (){
+var r_text = new Array ();
+r_text[0] = "A morte é inevitável. Nosso medo dela nos faz jogar pelo seguro, bloqueia a emoção. É um jogo perdedor. Sem paixão, você já está morto";
+r_text[1] = "O fluxo do tempo é sempre cruel, sua velocidade parece diferente para cada pessoa, mas ninguém pode mudá-la. Uma coisa que não muda com o tempo é a memória dos dias mais jovens.";
+r_text[2] = "Se nossas vidas já estão escritas, seria preciso um homem corajoso para mudar o roteiro";
+r_text[3] = "Apague minhas chamas com gasolina.Max Payne";
+r_text[4] = "Todos nós fazemos escolhas na vida, mas no final nossas escolhas nos fazem. BioShock";
+r_text[5] = "O homem certo no lugar errado pode fazer toda a diferença no mundo. Então acorde, senhor Freeman... acorde e sinta o cheiro das cinzas. Half Life 2";
+r_text[6] = "Nós estamos diante do precipício da mudança. O mundo teme a queda inevitável no abismo. Preste atenção para esse momento... e quando vier, não hesite em pular. É somente quando você cai que você aprende se consegue voar. Dragon Age II";
+var i = Math.floor(7*Math.random())
+document.getElementById("sorte").innerHTML = "<p>" + r_text[i] + "</p>";
+}
+
+</script></head>
+</head>
+<body>
+
+<div id="sorte">
+
+</div>
+<form>
+<center><input type="button" value="Frase" onClick="obterFrase();"></input></center>
+</form>
+</body>
+</html>
